@@ -5,7 +5,7 @@
 #include "3rdparty/half/half.hpp"
 using half_float::half;
 
-#ifdef WINDOWS_BUILD
+#ifdef _MSC_VER 
 	#define HALF_MAX	65503
 	#define HALF_MIN	0.00061036
 #else
